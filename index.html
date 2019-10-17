@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<title>
+	Crystal Game
+</title>
+<script>
+
+</script>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="gametitle">
+		<h2>Crystal Collector!</h2>
+	</div>
+	<br>
+	<div class="gamedescription">
+		<p>
+			<p>You will be given a random number at the start of the game. There are four crystals below. By clicking on crystal you
+				will add a specific amount of points to your total score. You win te game by matching your total score to rando number,
+				you lose the game if your total score goes above the random number. The value of ach crystal is hidden from you until
+				you click on it. Each time when the game starts, the game will change the values of each crystal.</p>
+		</p>
+	</div>
+	<br>
+	<div>
+    <div class="info">Goal:</div>
+    <div class="info" id="goalscore"></div>
+	</div>
+  <br>
+  <div>
+    <div class="info">Current Score:</div>
+    <div class="info" id="currentscore"></div>
+	</div>
+  <br>
+	<div class="pics">
+  <input type="image" src="/Users/arielb/Desktop/unit-4-game/assets/images/crystal2.png" />
+  <input type="image" src="/Users/arielb/Desktop/unit-4-game/assets/images/crystal1.jpeg" />
+  <input type="image" src="/Users/arielb/Desktop/unit-4-game/assets/images/crystal4.jpeg" />
+  <input type="image" src="/Users/arielb/Desktop/unit-4-game/assets/images/crystal3.jpeg" />
+</div>
+	
+  <br>
+<div class="gemcontainer"></div>
+
+
+  <br>
+	<div><p>Status:</p><p id="status"></p></div>
+  <div><p>Wins:</p><p id="wincount"></p></div>
+  <div><p>Losses:</p><p id="losscount"></p></div>
+	
+	<script src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
