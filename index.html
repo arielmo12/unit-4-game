@@ -13,7 +13,9 @@
 	<title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+	 <script src="game.js"></script>
+
 </head>
 
 <body>
@@ -41,10 +43,13 @@
 	</div>
   <br>
 	<div class="pics">
-  <input type="image" src="/Users/arielb/Desktop/unit-4-game/assets/images/crystal2.png" />
-  <input type="image" src="/Users/arielb/Desktop/unit-4-game/assets/images/crystal1.jpeg" />
-  <input type="image" src="/Users/arielb/Desktop/unit-4-game/assets/images/crystal4.jpeg" />
-  <input type="image" src="/Users/arielb/Desktop/unit-4-game/assets/images/crystal3.jpeg" />
+ <div class="yellow"> <input type="image" src="/Users/arielb/Desktop/unit-4-game/assets/images/crystal2.png"  width="200" height="121" /> </div>
+  <br>
+  <div class="pink"><input type="image" src="/Users/arielb/Desktop/unit-4-game/assets/images/crystal1.jpeg"  width="200" height="121" /></div>
+  <br>
+  <div class="ice"><input type="image" src="/Users/arielb/Desktop/unit-4-game/assets/images/crystal4.jpeg"  width="200" height="121" /></div>
+  <br>
+  <div class="red"><input type="image" src="/Users/arielb/Desktop/unit-4-game/assets/images/crystal6.png" width="200" height="121" /></div>
 </div>
 	
   <br>
@@ -52,9 +57,13 @@
 
 
   <br>
-	<div><p>Status:</p><p id="status"></p></div>
-  <div><p>Wins:</p><p id="wincount"></p></div>
-  <div><p>Losses:</p><p id="losscount"></p></div>
+	
+
+  <div class="col-md-12 scoreRecord">
+	<p class="subtitle2">Number to Win:</p> <span id="randomNumber" class="score"></span>	
+	<p class="subtitle2">Your Score:</p> <span id="totalScore" class="score"></span>	
+	<p class="subtitle2">Wins:</p> <span id="numberOfWins" class="score"></span>
+	<p class="subtitle2">Losses:</p> <span id="numberOfLosses" class="score"></span>
 	
 	<script src="./assets/javascript/game.js"></script>
 </body>
